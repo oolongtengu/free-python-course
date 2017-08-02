@@ -182,7 +182,7 @@ def test_lessons_solutions(grep=None, units=None, exit=True):
             for solution in iter_lesson_solutions(lesson):
                 write_solution_test_file(temp_dir, solution)
 
-        exit = pytest.main([abs_path, '-v', '--tb=short'])
+        exit = pytest.main([abs_path, '-s', '-v', '--tb=short'])
         if exit != 0:
             sys.exit(exit)
 
