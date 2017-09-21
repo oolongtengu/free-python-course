@@ -1,6 +1,7 @@
 message = None
 
-if [YOUR CODE]:
+# Remove square brackets and write condition to make if statement code run
+if [YOUR CODE]: 
     message = "Hello World"
 
 print(message)
