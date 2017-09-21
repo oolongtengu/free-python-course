@@ -58,6 +58,22 @@ CODE_TYPE = 'code'
 SOLUTIONS_RELATIVE_PATH = 'solutions'
 TESTS_FILE_NAME = 'tests.py'
 TESTS_DIRECTORY_NAME = 'tests'
+EXTRA_PYTHON_CODE_FOR_ASSIGNMENTS = """
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+import sys
+class CaptureOutput(list):
+    def __enter__(self):
+        self._stdout = sys.stdout
+        sys.stdout = self._stringio = StringIO()
+        return self
+    def __exit__(self, *args):
+        self.extend(self._stringio.getvalue().splitlines())
+        del self._stringio
+        sys.stdout = self._stdout
+"""
 
 
 class InvalidLessonException(Exception):
@@ -171,6 +187,8 @@ def write_solution_test_file(_dir, solution):
 
     with open(test_file_path, 'w') as test_f, solution.path.open('r') as solution_f:
         test_f.write(solution_f.read())
+        test_f.write('\n\n')
+        test_f.write(EXTRA_PYTHON_CODE_FOR_ASSIGNMENTS)
         test_f.write('\n\n')
         test_f.write(solution.lesson.test_data)
 
