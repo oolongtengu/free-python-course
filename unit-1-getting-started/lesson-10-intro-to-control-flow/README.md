@@ -1,14 +1,14 @@
 # Intro to Control Flow
 
-As we've seen in class, our algorithms are just a set of rules that instruct the computer to do something. We're commanding the computer on what to do. But these algorithms won't be linear, there will be different "paths" to take. The most common example is the introduction of **_conditionals_**. Conditionals, or simply put, **_if statements_** let us make decisions in our algorithms. Examples:
+As we've seen in class, our algorithms are just a set of rules that instruct the computer to do something. We're commanding the computer on what to do. But these algorithms won't be linear, there will be different "paths" to take. The most common example is the introduction of **_conditionals_**. Conditionals, also known as **_if statements_**, let us make decisions in our algorithms. Examples:
 
 * If the user's age is less than 16, don't allow the registration.
-* If the purchase is greater than $1000 check for fraud.
+* If the purchase is greater than $1000, check for fraud.
 
-The general form of an IF statement in Python is as follows:
+The general form of an **IF** statement in Python is as follows:
 
 ```python
-if [CONDITION]:
+if CONDITION:
     # do something
     # (Condition True path)
 else:
@@ -16,7 +16,7 @@ else:
     # (Condition False path)
 ```
 
-In our previous example, the `[CONDITION]` is what will make you decide between a path or the other. If the condition evaluates to True the, "True" path is taken. If the condition is NOT True (it's False) the "False" path is taken.
+In our previous example, the `CONDITION` is what will make you decide between one path or the other. If the condition evaluates to `True`, the "True" path is taken. If the condition is NOT True (it's `False`), the "False" path is taken.
 
 The condition for your if statements will be formed with a combination of data and boolean operators. For example, these are all valid conditions:
 
@@ -26,13 +26,13 @@ The condition for your if statements will be formed with a combination of data a
 
 There are many boolean operators, like:
 
-* `>`: Greater than
-* `<`: Less than
-* `==`: Equals
-* `>=`: Greater or equals than
-* `<=`: Less or equals than
+* `>` : Greater than
+* `<` : Less than
+* `==` : Equals
+* `>=` : Greater or equals than
+* `<=` : Less or equals than
 
-We also have operators that "combine" other operations. Like `and` or `or`. And finally we have the `not` operator, that just inverts the given value provided.
+We also have operators **`and`** and **`or`** that "combine" other operations. Finally we have the **`not`** operator that just inverts the given value provided (like from `True` to `False`).
 
 ## Reading material
 
