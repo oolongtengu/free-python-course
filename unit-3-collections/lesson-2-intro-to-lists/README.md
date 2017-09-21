@@ -4,7 +4,7 @@ Lists are probably the most popular collections used in the Python programming l
 
 A list is an **_ordered_**, **_heterogeneous_**, **_mutable_** collection. This means:
 
-#### Ordered
+##### Ordered
 
 As you add new elements, the list "remembers" the order that you chose for your elements. Example:
 
@@ -20,7 +20,7 @@ print(shopping_list)  # ['Eggs', 'Milk', 'Bread']
 
 In the previous example you can see that the order of the elements in the resulting list (`['Eggs', 'Milk', 'Bread']`) is the same order we chose when building the list (_"Eggs"_ first, _"Milk"_ second and finally _"Bread"_).
 
-#### Heterogeneous
+##### Heterogeneous
 
 This means that you can put any type of element in a list. This is a recurrent theme in all the other Python collections, they take any type of element. Example:
 
@@ -31,7 +31,7 @@ my_list = ["Hello", 3, True, 2.5]
 
 As you can see, we're storing a string object (`"Hello"`), an integer (`3`), a boolean (`True`) and a float (`2.5`). Python lists are perfectly capable of handling any type of elements. Even other lists (we'll talk more about this later).
 
-#### Mutable
+##### Mutable
 
 This means that we can change lists (we can _mutate_ them). It probably sounds a little bit dumb to mention, but you'll see later that there are other collections that are **not** mutable. But going back to lists, you can simply change them at will, for example:
 
@@ -54,7 +54,7 @@ Don't _overthink_ this; it's the most intuitive way of thinking collections: bei
 
 There are two possible ways of creating lists:
 
-#### Literally
+##### Literally
 
 This is the preferred (and most intuitive) way. With it, you create the list and specify elements "right in place". Everything seems like just one operation. It's what we've been doing up to this point:
 
@@ -65,7 +65,7 @@ courses = ['Intro to Python', 'Advanced Python']
 In this example we've created the list `courses` containing two elements. We're also using square brackets (`[]`) to denote the list.
 
 
-#### Programatically
+##### Programatically
 
 In this case the process of creating the list and populating it (inserting elements) will be split in several steps:
 
