@@ -8,7 +8,7 @@ As we've seen in class, our algorithms are just a set of rules that instruct the
 The general form of an **IF** statement in Python is as follows:
 
 ```python
-if CONDITION:
+if [CONDITION]:
     # do something
     # (Condition True path)
 else:
@@ -16,7 +16,7 @@ else:
     # (Condition False path)
 ```
 
-In our previous example, the `CONDITION` is what will make you decide between one path or the other. If the condition evaluates to `True`, the "True" path is taken. If the condition is NOT True (it's `False`), the "False" path is taken.
+In our previous example, the `[CONDITION]` is what will make you decide between one path or the other. If the condition evaluates to `True`, the "True" path is taken. If the condition is NOT True (it's `False`), the "False" path is taken. Note the square brackets around `[CONDITION]` are just placeholders for this example and are not actually used in code.
 
 The condition for your if statements will be formed with a combination of data and boolean operators. For example, these are all valid conditions:
 
