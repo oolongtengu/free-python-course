@@ -1,5 +1,6 @@
 x = 10
 
+# Remove square brackets and complete if statement conditions to make code run
 if x [??] 10:
     message_1 = "Hello World"
 
