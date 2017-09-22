@@ -1,12 +1,14 @@
-# Introduction to Functions
+# Intro to Functions
 
-Functions are great!
+Functions are an important building block for writing programs. They are like smaller bite-sized programs within your main program that can be executed to perform operations for you. They are great for compartmentalizng your code and breaking it down into smaller parts that are easier to read and test. 
 
-They are like bite-sized programs in your code that can be executed to perform operations for you. You can combine them or reuse them in your code to do some pretty wonderful things!
+Functions usually receive some data as an input and `return` a result as output.  If you have to repeat a calculation in your program, it's good practice to put it inside a function so you don't have to have redundant code in your program.
 
-The usually receive data as input and `return` a result as output.
+Let's get started.
 
-Functions are built like this:
+Functions have two parts- **function definitions** and **function calls**.
+
+Functions definitions look like this:
 
 ```
 # Function Defintion
@@ -17,7 +19,8 @@ def my_function(parameter1, parameter2):
 
 `def` tells python that you are defining a function. Then you give it a name (my_function in this example).
 
-In parenthesis, you see two parameters. You can have as many or as few as you want. Note that order matters (has to match the order of the function call). These are parameters the function receives as input to process. Note the keyword `return` in the function defintion. That means this function is going to have an output.
+In parenthesis, you see two parameters. You can have as many or as few as you want. Note that order matters (has to match the order of the function call). These are parameters the function receives as input to process. Note the keyword `return` in the function defintion. That means this function is going to have an output. When we get to the function call, we can see what happens to the output.
+
 
 The function call is going to look similar to the function definition.
 
@@ -35,7 +38,9 @@ You use the functions name, and pass it arguments (function inputs). They are ca
 
 These arguments are sent to the function defintion and are saved using the parameter names. When we run the first function call below, argument1 is stored in a variable called parameter1 and argument2 is stored in a variable called parameter2 in the function definition when it runs.
 
-Then the code executes and we see the return statement, telling python our function has output. That output can be stored in a new variable when we call the function. We store it in a variable called function_result.
+Then the code executes and we see the return statement in the function definition telling python our function has output. That output can be stored in a new variable when we call the function. We store it in a variable called function_result.
+
+Once you have a function defined, you can call it as many times as you want. You can put function calls inside other functions. The sky is the limit!
 
 Those are the basics. 
 
