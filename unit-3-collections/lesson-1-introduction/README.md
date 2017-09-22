@@ -1,8 +1,6 @@
-# Collections
+# Introduction
 
-This unit starts dealing with the topic of "collections", also commonly known as "Data Structures". We'll approach collections from a "utility" (abstract) standpoint: _what are they used for?_ When should we use one or the other? etc. We won't focus on how they're implemented internally ([(Doubly/Circular/Standard) Linked Lists](https://en.wikipedia.org/wiki/Linked_list), [Hash Tables](https://en.wikipedia.org/wiki/Hash_table), [B(+/-/*) Trees](https://en.wikipedia.org/wiki/B-tree), as that's a much more complicated topic.
-
-## Introduction
+This unit starts dealing with the topic of "collections", also commonly known as "Data Structures". We'll approach collections from a "utility" (abstract) standpoint: _what are they used for?_, _When should we use one or the other?_, etc. We won't focus on how they're implemented internally, as that's a much more complicated topic.
 
 The main objective of Collections is to let us store many elements in the same "container". As simple as that. Think how you've been "storing elements" up to this point: probably only using variables. If I ask you to keep track of 3 users' emails, you'd do something like:
 
