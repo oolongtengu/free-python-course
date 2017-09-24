@@ -1,1 +1,1 @@
-# empty
+# Create a list named `heterogeneous` and put a integer, string, and boolean in it.
