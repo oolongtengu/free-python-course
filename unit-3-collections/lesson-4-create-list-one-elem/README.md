@@ -1,6 +1,6 @@
 # Create List with One Element
 
-Great news! You have been given an special opportunity to make another list! Yes!
+Great news! You have been given a special opportunity to make another list! Yes!
 
 This time, create one **with just one element** or item in it. 
 
