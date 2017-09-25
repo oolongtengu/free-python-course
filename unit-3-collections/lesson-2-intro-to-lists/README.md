@@ -50,6 +50,18 @@ print(shopping_list)  # ['Eggs']
 
 Don't _overthink_ this; it's the most intuitive way of thinking collections: being mutable.
 
+# List Operations
+
+Having a list created is not enough. We'll need to "manipulate" these lists to achieve something useful. These are the most common operations with lists:
+
+* Adding elements
+* Removing elements
+* Counting elements (_"How many elements does this list have?"_)
+* Check if an element exists in a list (_"Is john@rmotr.com already part of this list?"_)
+* "Concatenating" lists: Building a new list out of two or more lists.
+
+We'll explore all these operations in detail in the following lessons.
+
 ## Creating Lists
 
 There are two possible ways of creating lists:
@@ -65,7 +77,7 @@ courses = ['Intro to Python', 'Advanced Python']
 In this example we've created the list `courses` containing two elements. We're also using square brackets (`[]`) to denote the list.
 
 
-##### Programatically
+##### Programmatically
 
 In this case the process of creating the list and populating it (inserting elements) will be split in several steps:
 
@@ -77,118 +89,3 @@ courses.append('Advanced Python')
 ```
 
 This example looks a little bit less "intuitive". First, we're using the `list()` function to create an empty list (we're not using square brackets) and then we're adding elements one by one.
-
-## Operations with Lists
-
-Once you have a list, you'll want to perform different operations with it. For example, **counting elements, adding new elements, removing others,** etc.
-
-Python makes it easy to operate with your list. There are **many** different operations you can perform, we just show you a few examples for you to see how useful they are, but we encourage you to check the [documentation](https://docs.python.org/3.5/tutorial/datastructures.html#more-on-lists) for more.
-
-```python
-my_list = ['a', 'b', 'c']
-
-# Append an element (add at the end)
-my_list.append('d')
-
-# Add an element in a certain position
-my_list.insert(0, 'z')  # Beginning
-my_list.insert(3, 'z')  # 4th position (index == 3)
-
-# Count how many items the list has
-print(len(my_list))
-
-# Remove all the elements from the list
-my_list.clear()
-
-# Reverse its items
-my_list.reverse()
-
-# ... many more ...
-```
-
-## Iterating a list
-
-Iteration is key to understand how lists work. To properly understand lists you should be familiar with the **for loop** (control flow statement).
-
-The good news is that it's simple to understand. Here are a few examples:
-```python
-names = ['Mary', 'Tom', 'Rose']
-for name in names:
-    print(name)
-# This will print the names, each in a new line:
-# Mary
-# Tom
-# Rose
-
-numbers = [0, 1, 2, 3, 4]
-for number in numbers:
-    # I can define whatever I want inside the **for loop body**
-    double = number * 2
-    print(double)
-# This will print the numbers, doubled (one number per line):
-# 0
-# 2
-# 4
-# 6
-# 8
-```
-As you can see in the previous example, a `for loop` is composed of a few things:
-
-![Python for loop explained](https://cloud.githubusercontent.com/assets/872296/20549004/261aac18-b107-11e6-8ff0-1e8ef783f737.png)
-
-**Note 1:** `for` is a keyword, should always be used
-
-**Note 2:** `name` in this case is a variable that **we choose**. We can choose whatever name we want for this variable (`name`, `n`, `a_name`). **It'll reference each one of the elements in the list**
-
-**Note 3:** `in` is also a keyword. It precedes the list we'll iterate.
-
-**Note 4:** `names` is the **list itself**. It's the list we want to iterate
-
-**Note 5:** Finally, the **for loop body**. This is really important. We'll express here whatever we want to do with each one of the elements as we iterate through the list.
-
-## List indexing
-
-Finally, you can retrieve individual elements from a list by specifying the position they have in the list. Indexes start from the number 0\. So, the first element will have index 0, the second one will have index 1, the third one 3, etc... The last element of the list has index `len(list) - 1` (if the list has 8 elements, the last one is 7 (`8-1`))
-
-There are also negative indexes, the last element of the list also has the index -1, the second to last -2, etc.
-
-```python
-names = ['Mary', 'Tom', 'Rose', 'Joe']
-mary  = names[0]
-tom   = names[1]
-joe   = names[-1]
-rose  = names[-2]
-```
-
-You can also get sublists from a given list. That'd be like a _fraction of a list_. A sublist specified by a range of indexes. For example, the **_elements between the second and the fifth position_**, the **_first three elements_**, etc.
-
-To get a sublist you must specify two indexes separated by a colon sign. Example: `my_list[INDEX-1:INDEX-2]`.
-
-**Important!** The resulting sublist will **NOT** include the element at the last position specified. See examples below
-
-```python
-names = ['Mary', 'Tom', 'Rose', 'Joe']
-# First 3 names
-print(names[0:3])
-# ['Mary', 'Tom', 'Rose']
-
-# Just the first name
-print(names[0:1])
-# ['Mary']
-
-# Second and third
-print(names[1:3])
-# [Tom', 'Rose']
-
-# From the second element up to the end of the list
-print(names[1:4])
-# ['Tom', 'Rose', 'Joe']
-
-# The first index will be 0 by default, we can omit it:
-print(names[:3])
-# ['Mary', 'Tom', 'Rose']
-
-# The last index will be the last element by default, we can also omit it
-print(names[1:])
-# ['Tom', 'Rose', 'Joe']
-```
