@@ -1,5 +1,8 @@
 def test_list_literals():
-    assert type(heterogeneous) == list
-    assert any(isinstance(x, bool) for x in heterogeneous)
-    assert any(isinstance(x, int) for x in heterogeneous)
-    assert any(isinstance(x, str) for x in heterogeneous)
+    assert type(heterogeneous) == list, "Oops, heterogeneous is not a list"
+
+    assert len(heterogeneous) == 3
+
+    assert type(heterogeneous[0]) == int
+    assert type(heterogeneous[1]) == str
+    assert type(heterogeneous[2]) == bool

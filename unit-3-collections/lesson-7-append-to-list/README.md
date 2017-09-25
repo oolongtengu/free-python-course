@@ -1,14 +1,12 @@
 # Append to list
 
-Complete this function so it takes the `data` parameter and
-uses the append method to add it to the `hungry_list`. 
+The `append_to_list` functions receives two parameters, `hungry_list` and `data`. Its job is to append the `data` passed to the `hungry_list`. Examples:
 
 ```python
-my_list = []
-print(my_list) # Prints []
+a_list = ['pizza', 'bacon']
+modified_list = append_to_list(a_list, 'hamburguer')
 
-my_list.append("Eyyyyy")
-print(my_list) # Prints ["Eyyyyy"]
+print(modified_list)  # ['pizza', 'bacon', 'hamburguer']
 ```
 
-Don't forget to return the list!
+**Don't forget to return the list!**
