@@ -40,4 +40,36 @@ my_list.insert(3, 'Y')
 print(my_list)  # ['a', 'X', 'b', 'Y', 'c']
 ```
 
-As you can see from these examples, we're using integers to specify the positions, which start counting from `0` (`0` is the **first** position). We'll learn more about this in the "String Indexing" section later.
+As you can see from these examples, we're using integers to specify the positions, which start counting from `0` (`0` is the **first** position). We'll learn more about this in the " Indexing" section later.
+
+You can also "simulate" the `append` method using the `insert` method by computing the correct position. Check the following example:
+
+```python
+list_1 = ['a', 'b', 'c']
+list_2 = ['a', 'b', 'c']
+
+list_1.append('X')
+list_2.insert(3, 'X')
+
+print(list_1)  # ['a', 'b', 'c', 'X']
+print(list_2)  # ['a', 'b', 'c', 'X']
+```
+
+The trick is calculating the right position for `insert`, which in the case of the last one, is just the length of the list, which you can dynamically get with the "total length" of the list:
+
+```python
+list_1 = []
+
+list_1.insert(len(list_1), 'a')
+print(list_1)  # ['a']
+
+list_1.insert(len(list_1), 'b')
+print(list_1)  # ['a', 'b']
+
+list_1.insert(len(list_1), 'c')
+print(list_1)  # ['a', 'b', 'c']
+```
+
+Pay attention to the position in our previous example, it's always the length of the list computed dinamically with the `len` function.
+
+**IMPORTANT:** Even though you can "replicate" the functionality of `append` using `insert` + `len`, if you want to add an element to the end of a list ("append it"), prefer the `append` method. It's a lot more clear and explicit.

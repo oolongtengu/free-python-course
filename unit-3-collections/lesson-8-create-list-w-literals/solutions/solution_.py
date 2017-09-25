@@ -1,1 +1,1 @@
-heterogeneous = [True, 12, "I'm a string!"]
+heterogeneous = [12, "I'm a string!", True]
