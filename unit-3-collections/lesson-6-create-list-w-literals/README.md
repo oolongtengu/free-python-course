@@ -10,4 +10,4 @@ fancy_list = ["i am data that is not stored in a variable! OMG!"]
 
 Want to know something cool? Lists are very progressive!
 They are **heterogeneous** and support diversity! That means that you can put 
-multiple data types inside the same list. 
+multiple data types inside the same list. Integers, booleans, strings, floats, other lists, everything is good here! Safe space.
