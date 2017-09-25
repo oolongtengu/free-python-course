@@ -17,4 +17,4 @@ We usually refer to "counting elements" as _"getting the **length** of a list"_.
 
 ---
 
-**Let's practice how to create lists and compute the lenght of them**
+**Jump to the next lesson to start practicing how to create lists and compute the lenght of them...**
