@@ -51,5 +51,3 @@ shopping_list.append('Bread')
 If it sounds confusing, think about that time that you asked someone to do something for you. If that person had enough "domain knowledge" you can just tell them directly what to do, in other case, you'd need to tell them specifically the steps required to achieve that result.
 
 Consider the example of "baking cookies". If you're sharing your special cookies recipe with someone that knows about cooking, you'll just tell them: "bake the cookies for about 10 minutes". If you're talking with someone less experienced with cooking (or maybe a robot), you'll need to be a lot more explicit: "Open the oven door, turn on the oven, set it in 350º, wait 10 minutes, take the cookies out". You're giving a specific set of steps that will achieve the same result as the previous "more declarative" way ("just bake the cookies").
-
-**Let's do some practice related to creating lists...**

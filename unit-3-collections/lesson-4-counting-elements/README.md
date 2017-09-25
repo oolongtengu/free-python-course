@@ -14,3 +14,7 @@ print(new_length)  # 4
 ```
 
 We usually refer to "counting elements" as _"getting the **length** of a list"_. You can associate the `len` function with the **_length_** word.
+
+---
+
+**Let's practice how to create lists and compute the lenght of them**
