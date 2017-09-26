@@ -55,9 +55,13 @@ if "cake" in secret_message:
 else:
     secret_message.append(list_three[3])
 
-# Finally, append the word 2nd element of list_two and then append var1 to secret_message
-secret_message.append(list_two[1])
-secret_message.append(var1)
+# Create a list in the variable list_five with the 2nd element of list_two, "puppies", and var1 in it in that order
+list_five = [list_two[1], "puppies", var1]
+
+# Finally, write a for loop that goes through list five and appends all words that aren't puppies to secret_message
+for item in list_five:
+    if item != "puppies":
+        secret_message.append(item)
 
 # Run this to see if you got it right!
 print(secret_message)

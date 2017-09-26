@@ -46,7 +46,11 @@ list_four = ?
 # Otherwise, append the 4th item of list_three to secret_message
 
 
-# Finally, append the word 2nd element of list_two and then append var1 to secret_message
+# Create a list in the variable list_five with the 2nd element of list_two, "puppies", and var1 in it in that order
+list_five = ?
+
+
+# Finally, write a for loop that goes through list five and appends all words that aren't puppies to secret_message
 
 
 # Run this to see if you got it right!
