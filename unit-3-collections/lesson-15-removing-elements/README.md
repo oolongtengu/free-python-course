@@ -30,7 +30,16 @@ print(my_list)  # ['a', 'c', 'b', 'b']
 # (Only first one was removed)
 ```
 
-In this example you can see how we've removed the first occurrence of the element `'b'`, but the last two ones are still in the list.
+In this example you can see how we've removed the first occurrence of the element `'b'`, but the last two ones are still in the list. 
+
+One more example just to make sure you get it!
+
+```python
+matthew_mcconaughey = ["alright", "alright", "alright"]
+matthew_mcconaughey.remove("alright")
+print(matthew_mcconaughey) # ["alright", "alright"] 
+# Not quite the same, huh.
+```
 
 ## Remove by position
 
